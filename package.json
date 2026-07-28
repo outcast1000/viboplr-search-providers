@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "viboplr-search-providers-tests",
+  "description": "Test harness for the viboplr-search-providers plugin (not published; the plugin itself is just index.js + manifest.json).",
+  "scripts": {
+    "test": "node --test"
+  }
+}
