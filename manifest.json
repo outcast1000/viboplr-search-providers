@@ -1,23 +1,18 @@
 {
   "id": "search-providers",
   "name": "Web Search",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "Viboplr",
   "description": "Adds a Search submenu to artists, albums, and tracks for looking them up on Google, Last.fm, X, YouTube, Genius, and your own custom providers.",
   "icon": "M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z",
   "minAppVersion": "1.0.85",
   "runtime": "worker",
-  "permissions": ["system:open"],
-  "apiUsage": [
-    {
-      "api": "contextMenu.registerItem",
-      "reason": "Adds a Search submenu to artist/album/track context and detail menus"
-    },
-    {
-      "api": "network.openUrl",
-      "reason": "Opens the selected search URL in your browser"
-    }
+  "permissions": [
+    "system:open"
   ],
+  "permissionReasons": {
+    "system:open": "Open a search for the artist, album or track you picked on Google, Last.fm, X, YouTube, Genius or your own providers"
+  },
   "contributes": {
     "settingsPanel": {
       "id": "search-providers-settings",
